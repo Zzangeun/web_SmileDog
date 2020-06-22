@@ -4,18 +4,18 @@
     <hr>
       <div id="rightimg">
 </div>
-    <div style="text-align:center; ">
-        <div style="display: inline-block; text-align: center;  padding: 40px; width: 800px;">
+    <div style="text-align:center;  ">
+        <div style="display: inline-block; text-align: center;  padding: 40px; width: 800px; ">
             <h3 style="font-family: 'Do Hyeon', sans-serif;"> {{adoption_post.title}}</h3>
             <div style="text-align: right;">
                 <p>{{adoption_post.author}}</p>
                 <p>{{adoption_post.created_date}}</p><br><br>
             </div>
-            <div>
+            <div >
                 {% if adoption_post.image %}
                     <img src="{{adoption_post.image.url}}" width="700px">
                 {% endif %} <br><br>
-                <p>{{adoption_post.text | linebreaks}}</p>  <hr>
+                <p >{{adoption_post.text | linebreaks}}</p>  <hr>
             </div><br>
             <div style ="text-align:right">
             {% if adoption_post.author == user or user.is_superuser %}

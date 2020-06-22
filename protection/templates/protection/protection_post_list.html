@@ -13,6 +13,7 @@
                         <img src="{{protection_post.protection_image.url}}" width="260px" height="260px">
                     {% endif %}
                     <br><br>
+                    <p style="text-align: center; font-family: 'Do Hyeon', sans-serif;" >{{protection_post.protection_author}}</p>
                     <p style="text-align: center; font-family: 'Do Hyeon', sans-serif;">{{protection_post.protection_created_date}} {{protection_post.protection_created_date | timesince }}</p>
                 </div>
             {% endfor %}

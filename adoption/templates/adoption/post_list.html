@@ -13,6 +13,7 @@
                         <img src="{{adoption_post.image.url}}" width="260px" height="260px">
                     {% endif %}
                     <br><br>
+                     <p style="text-align: center; font-family: 'Do Hyeon', sans-serif;" >{{adoption_post.author}}</p>
                     <p style="text-align: center; font-family: 'Do Hyeon', sans-serif;">{{adoption_post.created_date}} {{adoption_post.created_date | timesince }}</p>
                 </div>
             {% endfor %}
